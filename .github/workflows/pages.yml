@@ -28,5 +28,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+          name: revealed-pages-site
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: revealed-pages-site
